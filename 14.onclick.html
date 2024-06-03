@@ -1,0 +1,22 @@
+<!-- The onclick event occurs when the user clicks on an HTML element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14. OnClick Event</title>
+</head>
+<body>
+    <!-- <h1 id="demo">HELLO!!</h1> -->
+    <h1 id="demo"></h1>
+    <button onclick="main()">Click Me</button>
+
+    <script>
+        function main(){
+            document.getElementById("demo").innerHTML="HELLO!!";
+            document.getElementById("demo").style.color="red";
+        }
+    </script>
+</body>
+</html>

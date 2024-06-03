@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Set Interval</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+    //    setInterval(main())
+    //    function main(){
+    //     document.getElementById("demo").innerHTML = "HELLO";    
+    //    }
+    
+    // OOOORRRRR
+    
+    const a = document.getElementById("demo");//.innerHTML = "HELLO";    
+    
+    setInterval(function() {
+        a.innerHTML += "HELLO" + "<br><hr>";
+    }, 100);
+    </script>
+</body>
+</html>

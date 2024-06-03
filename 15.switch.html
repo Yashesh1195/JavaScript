@@ -1,0 +1,74 @@
+<!-- Use the switch statement to select one of many code blocks to be executed.-->
+<!--
+Syntax:-
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+} 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15. Switch</title>
+</head>
+<body>
+    <abbr title="Diwali">Hello</abbr>
+
+    <h1 id="demo" style="font-size: 3cm;"></h1>
+    <script>
+        let a = new Date().getDay();
+        switch (a) {
+            case 0:
+                // text = "sunday";
+                document.getElementById("demo").innerHTML = "Sunday";
+                document.getElementById("demo").style.color = "steelblue";
+                break;
+            case 1:
+                // text = "monday";
+                document.getElementById("demo").innerHTML = "Monday";
+                document.getElementById("demo").style.color = "olivegreen";
+                break;
+            case 2:
+                // text = "tuesday";
+                document.getElementById("demo").innerHTML = "Tuesday";
+                document.getElementById("demo").style.color = "skyblue";
+                break;
+            case 3:
+                // text = "wednesday";
+                document.getElementById("demo").innerHTML = "Wednesday";
+                document.getElementById("demo").style.color = "grey";
+                break;
+            case 4:
+                // text = "thursday"
+                document.getElementById("demo").innerHTML = "Thursday";
+                document.getElementById("demo").style.color = "aqua";
+                break;
+            case 5:
+                // text = "friday";
+                document.getElementById("demo").innerHTML = "Friday";
+                document.getElementById("demo").style.color = "maroon";
+                break;
+            case 6:
+                document.getElementById("demo").innerHTML = "saturday";
+                document.getElementById("demo").style.color = "chocolate";
+                break;
+            default:
+                // text = "no day";
+                document.getElementById("demo").innerHTML = "No Day";
+        }
+        // document.getElementById("demo").innerHTML = text;
+
+    </script>
+</body>
+</html>
