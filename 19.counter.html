@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <h1 id="demo1"></h1>
+
+    <script>
+        abc1 = setInterval(abc)
+        up = 1; 
+
+
+        function abc() {
+            let a = document.getElementById("demo").innerHTML = ++up + "+";
+
+            if(up === 500) {
+                clearInterval(abc1);
+            }
+        } 
+
+
+
+        abc2 = setInterval(abcd)
+        up1 = 550; 
+
+
+        function abcd() {
+            let a = document.getElementById("demo1").innerHTML = --up1 + "-";
+
+            if(up1 === 0) {
+                clearInterval(abc2);
+            }
+        } 
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21. Slider</title>
+    <style>
+        #main{
+            height: 500px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img class="image" src="https://images.pexels.com/photos/9184517/pexels-photo-9184517.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+
+        <img class="image" src="https://images.pexels.com/photos/5914308/pexels-photo-5914308.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+
+        <img class="image" src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+
+        <img class="image" src="https://images.pexels.com/photos/1028225/pexels-photo-1028225.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+
+        <img class="image" src="https://images.pexels.com/photos/1624504/pexels-photo-1624504.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+    </div>
+
+    <script>
+        image = document.getElementsByClassName("image");
+        console.log(image)
+
+        index = 0;
+
+        function slider(){
+            for(i = 0;i <image.length; i++){
+                image[i].style.display="none";
+            }
+
+            image[index].style.display="block";
+            index++;
+
+            if(index == 5){
+                index = 0;
+            }
+
+            setTimeout("slider()",1000)
+        }
+        slider();
+;    </script>
+</body>
+</html>
+
+
+
+
+        <!-- img1 = document.getElementsByClassName("img")
+        console.log(img1)
+
+        index = 0
+        function slider()
+        {
+            for(i=0;i<img1.length;i++)
+            {
+                img1[i].style.display = "none";
+            }
+            img1[index].style.display = "block";
+            index++;
+
+            if(index == 4)
+            {
+                index = 0
+            }
+
+            setTimeout("silder()",2000)
+        }
+        slider()-->

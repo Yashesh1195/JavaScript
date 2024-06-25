@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20. Form Validation</title>
+</head>
+<body>
+    <form action="" onsubmit="return validation()">
+        <div>
+            <input type="text" id="fname" placeholder="Enter first name">
+            <span id="ferror"></span>
+        </div>
+        <div>
+            <input type="text" id="lname" placeholder="Enter last name">
+            <span id="lerror"></span>
+        </div>
+        <div>
+            <input type="text" id="number" placeholder="Enter number" pattern="[0-9]{10,}">
+            <span id="numerror"></span>
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="Enter email">
+            <span id="emerror"></span>
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="Enter password">
+            <span id="passerror"></span>
+        </div>
+        <div>
+            <input type="password" id="cpassword" placeholder="Confirm password">
+            <span id="cpasserror"></span>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    <!-- OOOORRRR -->
+
+    <!-- <form action="">
+        <div>
+            <input type="text" id="fname" placeholder="Enter first name" onblur="validation1(fname, ferror)">
+            <span id="ferror"></span>
+        </div>
+        <div>
+            <input type="text" id="lname" placeholder="Enter last name">
+            <span id="lerror"></span>
+        </div>
+        <div>
+            <input type="text" id="number" placeholder="Enter number" pattern="[0-9]{10,}">
+            <span id="numerror"></span>
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="Enter email">
+            <span id="emerror"></span>
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="Enter password">
+            <span id="passerror"></span>
+        </div>
+        <div>
+            <input type="password" id="cpassword" placeholder="Confirm password">
+            <span id="cpasserror"></span>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form> -->
+
+    <script>
+        data1 = document.getElementById("fname");
+        error1 = document.getElementById("ferror");
+
+        data2 = document.getElementById("lname");
+        error2 = document.getElementById("lerror");
+
+        data3 = document.getElementById("number");
+        error3 = document.getElementById("numerror");
+
+        data4 = document.getElementById("email");
+        error4 = document.getElementById("emerror");
+        
+        data5 = document.getElementById("password");
+        error5 = document.getElementById("passerror");
+        
+        data6 = document.getElementById("cpassword");
+        error6 = document.getElementById("cpasserror");
+        
+        function validation(){
+            if(data1.value == "" || data1.value == null){
+                error1.innerHTML = "First name required";
+                error1.style.color = "red";
+                return false;
+            }
+            else{
+                error1.innerHTML = "";
+            }
+            if(data2.value == "" || data2.value == null){
+                error2.innerHTML = "Last name required";
+                error2.style.color = "red";
+                return false;
+            }
+            else{
+                error2.innerHTML = "";
+            }
+            if(data3.value == "" || data3.value == null){
+                error3.innerHTML = "Number required";
+                error3.style.color = "red";
+                return false;
+            }
+            else{
+                error3.innerHTML = "";
+            }
+            if(data4.value == "" || data4.value == null){
+                error4.innerHTML = "Email Required";
+                error4.style.color = "red";
+                return false;
+            }
+            else{
+                error4.innerHTML = "";
+            }
+            
+            if(data5.value == "" || data5.value == null){
+                error5.innerHTML = "Password Required";
+                error5.style.color = "red";
+                return false;
+            }
+            else{
+                error5.innerHTML = "";
+            }
+
+            if(data6.value !== data5.value){
+                alert("Password does not match")
+            }
+        }
+
+        // OOOORRRR
+    
+        // function validation1(a,b){
+        //     if(a.value == "" || a.value == null){
+        //         b.innerHTML = "Required";
+        //         b.style.color = "red";
+        //         return false;
+        //     }
+        //     else{
+        //         b.innerHTML = "";
+        //     }
+        // }
+
+    </script>
+</body>
+</html>

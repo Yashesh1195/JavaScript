@@ -18,7 +18,31 @@ function functionName(parameters) {
         main();
          function main(){
             document.write("<h1>HELLO!!!</h1>");
-         }      
+         }    
+         
+        // Function without Parameter 
+
+        a = 20;
+        b = 30;
+
+        function add1(){
+            var sum = a+b;
+            document.write("<h1>",sum,"</h1>");
+        }
+        add1()
+        add1()
+        add1()
+
+        // Functon With Parameter
+
+        function add2(x,y){
+            var sum = x + y;
+            document.write("<h1>",sum,"</h1>");
+        }
+
+        add2(44,92);
+        add2(a,b);
+
     </script>
 </body>
 </html>
