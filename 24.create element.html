@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24. Create Element</title>
+</head>
+<body>
+    <div class="main" id="div1">
+        <p id="para1">Para1</p>
+        <p id="para2">Para2</p>
+        <p id="para3">Para3</p>
+        <p id="para4">Para4</p>
+    </div>
+
+    <script>
+        div_tag = document.getElementById("div1");
+        p_tag = document.getElementById("para2");
+
+        h1_tag = document.createElement('h1');
+
+        h1_text = document.createTextNode("H1 Tag");
+
+        h1_tag.append(h1_text);
+
+        div_tag.insertBefore(h1_tag, p_tag);
+    </script>
+</body>
+</html>

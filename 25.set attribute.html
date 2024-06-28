@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="YLOGO1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25. Set Attribute</title>
+</head>
+<body>
+    <input type="text" onblur="checkreq(this)"> 
+    <div id="data"></div>
+
+    <script>
+        function checkreq(e){
+            let div = document.getElementById("data");
+
+            var callspan = document.createElement("span");
+
+            callspan.setAttribute("id", "errorspan");
+
+            callspan.textContent = "This field is required";
+
+            if(e.value == ""){
+                div.appendChild(callspan);
+                console.log("Inside Else");
+            }
+            else{
+                console.log("Outside Else");
+                span = document.getElementById("errorspan");
+                console.log(span);
+                div.removeChild(span);
+            }
+
+        }
+    </script>
+</body>
+</html>
